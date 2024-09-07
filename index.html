@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animais Marinhos</title>
+</head>
+<body>
+    <header>
+        <h1>Animais Marinhos</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite qual animal marinho você quer conhecer" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+      <!--   <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">
+                        1. Baleia-azul (Balaenoptera musculus)
+                    </a>
+                </h2>
+                <p class="descricao-meta">
+                     A baleia-azul é o maior animal que já existiu na Terra! Com até 30 metros de comprimento e um peso de mais de 180 toneladas,
+                    ela é um gigante dos oceanos. Sua dieta se baseia em pequenos crustáceos chamados krill. <a href="https://pt.wikipedia.org/wiki/Baleia-azul#:~:text=A%20baleia%2Dazul%20(nome%20cient%C3%ADfico,maiores%20animais%20que%20j%C3%A1%20existiram." target="_blank">Mais informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">
+                    2. Água-viva juba-de-leão (Cyanea capillata)</a>
+                </h2>
+                <p class="descricao-meta">
+                    A água-viva juba-de-leão é a maior água-viva do mundo. Seus tentáculos podem chegar a 36 metros de comprimento! Apesar de sua aparência assustadora,
+                    ela não é perigosa para os humanos. <a href="https://pt.wikipedia.org/wiki/Cyanea_capillata#:~:text=A%20%C3%A1gua%2Dviva%2Dcabeluda%20(,um%20pr%C3%A9dio%20de%2013%20andares." target="_blank">Mais infromações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">
+                    3. Tubarão-baleia (Rhincodon typus)</a>
+                </h2>
+                <p class="descricao-meta">
+                    O tubarão-baleia é o maior peixe do mundo. Apesar do nome,
+                    ele é inofensivo para os humanos e se alimenta de plâncton. Pode chegar a 18 metros de comprimento. <a href="https://pt.wikipedia.org/wiki/Tubar%C3%A3o-baleia#:~:text=O%20tubar%C3%A3o%2Dbaleia%20(nome%20cient%C3%ADfico,(61%2C7%20p%C3%A9s)." target="_blank">Mais informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">4. Lula colossal (Mesonychoteuthis hamiltoni)</a></h2>
+                <p class="descricao-meta">
+                    A lula colossal é um dos predadores mais temidos das profundezas.
+                    Ela pode chegar a 13 metros de comprimento e possui os maiores olhos do reino animal. <a href="https://pt.wikipedia.org/wiki/Lula-colossal#:~:text=A%20lula%2Dcolossal%20(Mesonychoteuthis%20hamiltoni,os%2015%20metros%20de%20comprimento." target="_blank">Mais informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">5. Orca (Orcinus orca)</a>
+                </h2>
+                <p class="descricao-meta">
+                    A orca, também conhecida como baleia assassina, é um dos mamíferos marinhos mais inteligentes e poderosos.
+                    Ela pode chegar a 9 metros de comprimento e se alimenta de peixes, focas e até mesmo outras baleias. <a href="https://pt.wikipedia.org/wiki/Orca#:~:text=A%20Orca%20(Orcinus%20orca)%20%C3%A9,grupo%2C%20como%20por%20exemplo%20baleias." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">6. Crocodilo-poroso (Crocodylus porosus)</a></h2>
+                <p class="descricao-meta">
+                    O crocodilo-poroso é o maior réptil do mundo. Ele pode chegar a 7 metros de comprimento e vive em estuários e manguezais. <a href="https://pt.wikipedia.org/wiki/Crocodilo-de-%C3%A1gua-salgada#:~:text=Crocodylus%20porosus,-Johann%20Gottlob%20Theaenus&text=Os%20crocodilos%2Dmarinhos%20apresentam%20um,cristas%20em%20torno%20dos%20olhos." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">7. Elefante-marinho (Mirounga leonina)</a>
+                </h2>
+                <p class="descricao-meta">
+                    O elefante-marinho é a maior foca do mundo. Os machos podem chegar a 6,5 metros de comprimento e pesar mais de 4 toneladas. <a href="https://pt.wikipedia.org/wiki/Elefante-marinho-do-sul#:~:text=O%20elefante%2Dmarinho%2Ddo%2D,que%20facilita%20a%20sua%20diferencia%C3%A7%C3%A3o." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">8. Serpente marinha (Hydrophis platurus)</a>
+                </h2>
+                <p class="descricao-meta">
+                    A serpente marinha é a maior serpente marinha do mundo. Ela pode chegar a 3 metros de comprimento e é venenosa. <a href="https://pt.wikipedia.org/wiki/Cobra-do-mar-pel%C3%A1gio#:~:text=A%20cobra%2Ddo%2Dmar%2D,%C3%BAnico%20membro%20do%20g%C3%AAnero%20Pelamis." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">9. Tartaruga-de-couro (Dermochelys coriacea)</a></h2>
+                <p class="descricao-meta">
+                    A tartaruga-de-couro é a maior tartaruga marinha do mundo. Ela pode chegar a 2,1 metros de comprimento e se alimenta de águas-vivas. <a href="https://pt.wikipedia.org/wiki/Tartaruga-de-couro#:~:text=A%20tartaruga%2Dde%2Dcouro%20(,tanto%20em%20apar%C3%AAncia%20quanto%20em" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#">10. Estrela-do-mar (Asteroidea)</a></h2>
+                <p class="descricao-meta">
+                    As estrelas-do-mar são animais marinhos muito interessantes. Existem milhares de espécies diferentes, com tamanhos e cores variados.
+                    Algumas podem chegar a 1 metro de diâmetro. <a href="https://pt.wikipedia.org/wiki/Estrela-do-mar#:~:text=A%20estrela%2Ddo%2Dmar%20%C3%A9,at%C3%A9%20as%20g%C3%A9lidas%20%C3%A1guas%20polares." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">11. Plâncton</a></h2>
+                <p class="descricao-meta">
+                    O plâncton é um grupo muito grande de organismos microscópicos que flutuam na água.
+                    Eles podem ser animais ou plantas e servem de alimento para muitos outros animais marinhos. <a href="https://pt.wikipedia.org/wiki/Pl%C3%A2ncton" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">12. Cavalinho-marinho pigmeu</a></h2>
+                <p class="descricao-meta">
+                    O cavalinho-marinho pigmeu é um dos menores vertebrados do mundo. Eles são tão pequenos que podem se camuflar em corais e algas. <a href="https://pt.wikipedia.org/wiki/Hippocampus_denise#:~:text=O%20cavalo%2Dmarinho%20pigmeu%20%C3%A9,descoberta%20ap%C3%B3s%20testes%20em%20laborat%C3%B3rios.&text=Hippocampus%20denise%20%C3%A9%20muito%20pequeno%2C%20tendo%20tamanho%20m%C3%A1ximo%20de%201.5%20cm." target="_blank"> Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">13. Ofiúros</a></h2>
+                <p class="descricao-meta">
+                    Os ofiúros são parentes próximos das estrelas do mar, mas possuem braços mais finos e flexíveis. Algumas espécies são bem pequenas e podem passar despercebidas. <a href="https://pt.wikipedia.org/wiki/Ophiuroidea" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">14. Caranguejo-alface</a></h2>
+                <p class="descricao-meta">
+                    O caranguejo-alface é um crustáceo bem pequeno que se alimenta de algas. Ele possui uma carapaça achatada e se esconde entre as rochas.
+                    <a href="https://pt.wikipedia.org/wiki/Caranguejo" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="" target="_blank">15. Camarão-pistola</a></h2>
+                <p class="descricao-meta">
+                    O camarão-pistola é famoso por seu som alto, produzido por uma das suas pinças. Apesar do barulho, ele é bem pequeno e pode caber na palma da mão. <a href="https://pt.wikipedia.org/wiki/Caranguejo" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">16. Lesma-do-mar</a></h2>
+                <p>
+                    As lesmas-do-mar são moluscos marinhos coloridos e muito bonitos. Algumas espécies são bem pequenas e possuem formas e padrões incríveis.
+                    <a href="https://pt.wikipedia.org/wiki/Lesma_marinha#:~:text=Lesma%2Dmarinha%2C%20ou%20lesma%2D,torna%20semelhantes%20%C3%A0s%20lesmas%20terrestres." target="_blank">Mais Informações</a>
+                </p>
+            </div>
+            
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">17. Pipefish</a></h2>
+                <p class="descricao-meta">
+                    Os pipefish são parentes dos cavalos-marinhos e possuem um corpo alongado e fino. Algumas espécies são bem pequenas e se camuflam entre as algas. <a href="https://en.wikipedia.org/wiki/Pipefish" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">18. Caranguejo-anão</a></h2>
+                <p class="descricao-meta">
+                    O caranguejo-anão é um dos menores crustáceos do mundo. Ele vive em águas rasas e se alimenta de pequenos organismos. <a href="https://en.wikipedia.org/wiki/Rhithropanopeus" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2><a href="#" target="_blank">19. Polvo-pigmeu</a></h2>
+                <p class="descricao-meta">
+                    O polvo-pigmeu é um polvo bem pequeno que vive em águas profundas. Ele possui uma coloração vibrante e se esconde em fendas e buracos.
+                    <a href="https://en.wikipedia.org/wiki/Atlantic_pygmy_octopus" target="_blank">Mais Informações</a>
+                </p>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" >20. Zooplâncton</a>
+                </h2>
+                <p class="descricao-meta">
+                    O zooplâncton é um grupo de pequenos animais que vivem na água e se alimentam de fitoplâncton. Eles são essenciais para a cadeia alimentar marinha.
+                    <a href="https://pt.wikipedia.org/wiki/Zoopl%C3%A2ncton#:~:text=O%20zoopl%C3%A2ncton%20%C3%A9%20o%20segundo,de%20alimenta%C3%A7%C3%A3o%20a%20organismos%20maiores." target="_blank">Mais Informações</a>
+                </p>
+            </div> -->
+
+        </section>
+       </main>
+
+       
+    <footer>
+        <p>2024 - Animais Marinhos.</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
